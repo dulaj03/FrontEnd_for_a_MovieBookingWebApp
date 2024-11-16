@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width:100vw;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .slider {
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    perspective: 1000px;
+    position: relative;
+    align-items:center;
+  }
+  .box1{ background-image: url("../images/sonic 3 soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+  .box2{
+  background-image: url("../images/captain america soon.jpeg");
+    background-size:cover;
+    background-position:center center;}
+  .box3{
+  background-image: url("../images/kraven the soon.jpeg");
+    background-size:cover;
+    background-position:center center;}
+  .box4{
+  background-image: url("../images/moana-2-soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+  .box5{
+  background-image: url("../images/mufasa-soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+  .box6{
+  background-image: url("../images/wicked soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+  .box7{
+  background-image: url("../images/gladiator 2 soon.jpg");
+    background-size:cover;
+    background-position:center center;}
+
+  .slider [class*="box"] {
+  /*   float: left; */
+    overflow: hidden;
+    border-radius:0px;
+    transition: all 1s cubic-bezier(0.64, -0.2, 0.28, 1.2);
+    position:absolute;
+  }
+  .slider [class*="box"]:nth-child(7),
+  .slider [class*="box"]:nth-child(1) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.2) translate(-50%,-50%);
+    top: 10%;
+    z-index:1;
+  }
+  .slider [class*="box"]:nth-child(2),
+  .slider [class*="box"]:nth-child(6) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.4) translate(-50%,-50%);
+    top: 20%;
+    z-index:2;
+  }
+  .slider [class*="box"]:nth-child(3),
+  .slider [class*="box"]:nth-child(5) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.6) translate(-50%,-50%);
+    top: 30%;
+    z-index:3;
+  }
+  .slider [class*="box"]:nth-child(4) {
+    width: 60vw;
+    height: 60vh;
+    border-color: #c92026;
+    color: #fff;
+    transform: scale(1) translate(-50%,-50%);
+    top: 50%;
+    z-index:4;
+  }
+  .slider [class*="box"]:nth-child(1){
+    left:-13%;}
+  .slider [class*="box"]:nth-child(2){
+    left:-5%;}
+  .slider [class*="box"]:nth-child(3){
+    left:10%;}
+  .slider [class*="box"]:nth-child(4){
+    left:50%;}
+  .slider [class*="box"]:nth-child(5){
+    left:71%;}
+  .slider [class*="box"]:nth-child(6){
+    left:85%;}
+  .slider [class*="box"]:nth-child(7){
+    left:100%;}
+  .slider .firstSlide {
+      -webkit-animation:  firstChild 1s;
+      animation:  firstChild 1s;
+  }
+  /*Animation for buyers landing page slider*/
+  @-webkit-keyframes firstChild {
+      0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+      100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+  }
+  @keyframes firstChild {
+     0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+      100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+  }
+
+/* navbar always on the top*/
+.navbar {
+  position: fixed; /* Keeps it fixed to the viewport */
+  top: 0;
+  width: 100%; /* Full width of the viewport */
+  /*background-color: #333; /* Dark background for visibility */
+  /*color: white;*/
+  padding: 1em 0;
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar nav ul li {
+  margin: 0 1em;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+  color: #ddd;
+}
+.col-lg-3 .card.col-md-4.col-lg-12 .card-img-top.img-fluid {
+	transition: transform 0.3s ease;
+}
+
+
+.row .col-lg-3 .card.col-md-4.col-lg-12 {
+	 overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.row .col-lg-3 .card.col-md-4.col-lg-12:hover img{
+	transform: scale(1.1);
+}
+
+
+#navbarSupportedContent1 .form-inline.my-2.my-lg-0 .btn.btn-outline-success.my-2.my-sm-0 {
+    color: #FFFFFF;
+    background-color: #0096FF;
+	border-radius: 0px;
+	padding-left: px;
+	padding-right: px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin-left: 1px;
+	margin-right: 4px;
+}
+
+#navbarSupportedContent1 .form-inline.my-2.my-lg-0 .btn.btn-outline-success.my-2.my-sm-0:hover {
+	background-color: #00008B;
+}
+.container-fluid .navbar.navbar-expand-lg.navbar-light.bg-light {
+	padding-bottom: 5px;
+	padding-top: 3px;
+}
+
+.row .col-lg-4 .card.col-md-4.col-lg-12 {
+    background-color: transparent;
+}
+
+.list-group.list-group-flush .list-group-item .list-link {
+	 background-color: transparent;
+}
+
+ /* Add some styles for the button */
+              #fixedButton {
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              padding: 10px;	  
+              background-color: #0096FF;
+              color: #fff;
+              border: none;
+              border-radius: 50%;
+              cursor: pointer;
+		      text-color: #FFFFFF;
+              }
+				#fixedButton:hover 
+			  {
+		        background-color: #00008B;
+			  }
+
+
+/* Preloader Styles */
+        #preloader {
+        position: fixed;
+  		top: 0;
+ 		left: 0;
+  		width: 100%;
+  		height: 100%;
+  		background-color: #0b0b3c; /* Replace with your desired color */
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+  		align-items: center;
+  		z-index: 9999;
+		}
+
+		#preloader h1 {
+  		color: #ffffff;
+  		font-family: Arial, sans-serif;
+  		margin-bottom: 10px;
+		}
+
+		.loader {
+  		border: 5px solid #f3f3f3; /* Light gray */
+  		border-top: 5px solid #3498db; /* Blue */
+  		border-radius: 50%;
+  		width: 40px;
+  		height: 40px;
+  		animation: spin 1s linear infinite;
+		}
+
+		/* Loader Animation */
+		@keyframes spin {
+  		0% {
+    	transform: rotate(0deg);
+  		}
+  		100% {
+    	transform: rotate(360deg);
+  		}
+	   }
