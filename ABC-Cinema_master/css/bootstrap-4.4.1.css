@@ -548,6 +548,10 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container-fluid .row {
+    color: #444444;
+}
+
 
 @media (min-width: 576px) {
   .container {
@@ -4233,7 +4237,9 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+
 }
+
 
 .nav-link {
   display: block;

@@ -1,0 +1,18 @@
+@charset "utf-8";
+.container .row.row40 {
+	color: lightgrey;
+	/* background: rgba(183, 183, 183, 1); /* Opacity level 100% */
+	background: rgba(183, 183, 183, 0.4); /* Opacity level 40% */
+	text-align: justify;
+}
+.container .row.row40 .col-xl-4 {
+	margin-top: 18px;
+}
+center p a {
+	color: lightgrey;
+	text-decoration: none;
+}
+center p a:hover{
+	color: #898989;
+	text-decoration: underline;
+}
