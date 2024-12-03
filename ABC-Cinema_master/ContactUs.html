@@ -52,11 +52,52 @@
 					<a href="mailto:abccustomercare@gmail.com" onClick="checker()">abccustomercare@gmail.com</a> </p></center>
 			</div>	
 	    </div>   
-		  <br><br>  
+		  <br><br><br>  
 		  
-	 <h3 style= "font-family: sans-serif; color: white; margin-right: 920px;"><center><b> Feedback </b></center></h3><br> 
+	 <h3 style= "font-family: sans-serif; color: white; margin-right: 880px;"><center><b> FEEDBACKS </b></center></h3><br> 
 		  
-     </div><!-- End of Container -->
+	    <div class="row">
+		    <div class="col-xl-6"> <br><h2 id="h2" style="margin-left: 20px;"> How important you are!</h2>
+				<hr style="margin-left: 20px;">
+				<h5 id="h5" style="margin-left: 20px;">ABC Cinemas needs customer feedback as it helps make the movie going experience better for them. Through suggestions from the audiences and presenting cause of complaints the services such as seating comfort, sound quality, snack options and ticketing processes can be enhanced. Feedback keeps viewers loyal and builds in trust with viewers by creating a personalized experience that makes them want to watch again and again. ABC Cinemas knows what audiences are looking for and continues to stay step ahead of the rivals, providing you an unforgettable cinematic experience.</h5> <hr style="margin-left: 20px;"> 
+				<h4 id="h4" style="margin-left: 20px;"> We value your feedback! </h4>
+			</div>
+			
+		    <div class="col-xl-6">
+				<div class="feedback-card">
+                <div class="header">
+      				<h2>How would you rate your experience on ABC Cinemas?</h2>
+   			    </div>
+    			<div class="stars">
+     			 <span class="star">&#9733;</span>
+     			 <span class="star">&#9733;</span>
+     			 <span class="star">&#9733;</span>
+     			 <span class="star">&#9733;</span>
+     			 <span class="star inactive">&#9733;</span>
+   		        </div>
+   			    <form>
+    			 <label for="feedback-type">What would you like to share with us?</label>
+    			  <select id="feedback-type">
+     			   <option value="suggestion">Suggestion</option>
+      			   <option value="technical-error">Technical error</option>
+				   <option value="greatness">Great Expereience</option>
+     			   <option value="complaint">Complaint</option>
+    			  </select>
+
+     			 <label for="feedback-details">Write your ideas & expereience about us here!</label>
+    		     <textarea id="feedback-details" placeholder="Write your feedback here..."></textarea>
+
+   			   <p id="p1">If you need assistance with ABC Cinemas, please <a href="#" onClick="openTelLink()">click here</a> to contact us as soon as possible.</p>
+
+      			<button type="submit" class="submit-btn">Submit</button>
+    			</form>
+ 			 </div></div>
+	  	  </div>
+
+     
+
+		  
+</div><!-- End of Container -->
 	
 	  <br><br><br>
 	      <div class="row row3">
@@ -124,5 +165,24 @@
         }
     </script>
 	  
+	<!-- JS for Star Clicker -->
+	<script>
+	  document.addEventListener('DOMContentLoaded', () => {
+      const stars = document.querySelectorAll('.star');
+  
+      stars.forEach((star, index) => {
+      star.addEventListener('click', () => {
+      // Reset all stars
+      stars.forEach(s => s.classList.remove('active'));
+
+      // Highlight the clicked star and all previous ones
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.add('active');
+         }
+       });
+      });
+     });
+
+	</script>
 </body>
 </html>
