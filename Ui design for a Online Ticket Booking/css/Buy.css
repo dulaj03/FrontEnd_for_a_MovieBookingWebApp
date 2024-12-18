@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/* Search bar */
+.search-container{
+  	display: flex;
+    align-items: center;
+  	justify-content: center;
+  	background-color: #2d2d2d;
+  	border-radius: 20px;
+  	padding: 5px 10px;
+  	max-width: 600px;
+  	margin: 20px auto;
+  	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	margin-top: 35px;
+}
+.search-container i{
+	color: white;
+	margin-left: 3px;
+	font-size: 15px;
+}
+.search-container input[type="text"]{
+  	flex-grow: 1;
+  	border: none;
+  	outline: none;
+  	background: transparent;
+  	color: white;
+  	padding: 10px;
+  	font-size: 16px;
+}
+.search-container input::placeholder{
+	color: #a0a0a0;
+}
+.search-container input:focus{
+	outline: none;
+}
+#imax{
+	font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif';
+	color: #000E9C;
+	font-size: 25px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+#btn1{
+	border-radius: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #002EF0;
+}
+#btn1:before{
+	background-color: #fff;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	margin-right: 0px;
+	margin-bottom: 4px;
+  	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+}
+#btn1:hover:before{
+	background-color: white;
+	width: 3rem;
+}
+
+#btn2{
+	border-radius: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #002EF0;
+}
+#btn2:before{
+	background-color: #fff;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	margin-right: 0px;
+	margin-bottom: 4px;
+  	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+}
+#btn2:hover:before{
+	background-color: white;
+	width: 3rem;
+}
+
+#btn3{
+	border-radius: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #002EF0;
+}
+#btn3:before{
+	background-color: #fff;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	margin-right: 0px;
+	margin-bottom: 4px;
+  	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+}
+#btn3:hover:before{
+	background-color: white;
+	width: 3rem;
+}
+
+#btn4{
+	border-radius: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #002EF0;
+}
+#btn4:before{
+	background-color: #fff;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	margin-right: 0px;
+	margin-bottom: 4px;
+  	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+}
+#btn4:hover:before{
+	background-color: white;
+	width: 3rem;
+}
+
+#btn5{
+	border-radius: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #002EF0;
+}
+#btn5:before{
+	background-color: #fff;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	margin-right: 0px;
+	margin-bottom: 4px;
+  	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+}
+#btn5:hover:before{
+	background-color: white;
+	width: 3rem;
+}
+
+#btn6{
+	border-radius: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #002EF0;
+}
+#btn6:before{
+	background-color: #fff;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	margin-right: 0px;
+	margin-bottom: 4px;
+  	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+}
+#btn6:hover:before{
+	background-color: white;
+	width: 3rem;
+}
+
+#btn7{
+	border-radius: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #002EF0;
+}
+#btn7:before{
+	background-color: #fff;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	margin-right: 0px;
+	margin-bottom: 4px;
+  	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+}
+#btn7:hover:before{
+	background-color: white;
+	width: 3rem;
+}
+
+#btn8{
+	border-radius: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #002EF0;
+}
+#btn8:before{
+	background-color: #fff;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	margin-right: 0px;
+	margin-bottom: 4px;
+  	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+}
+#btn8:hover:before{
+	background-color: white;
+	width: 3rem;
+}
+
+#btn9{
+	border-radius: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #002EF0;
+}
+#btn9:before{
+	background-color: #fff;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	margin-right: 0px;
+	margin-bottom: 4px;
+  	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+}
+#btn9:hover:before{
+	background-color: white;
+	width: 3rem;
+}
